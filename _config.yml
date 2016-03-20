@@ -3,6 +3,7 @@ bio: 'A magician who turns coffee into codes'
 picture: 'assets/images/mybio.jpg'
 
 url: http://npvinhphat.github.io
+# url: http://localhost:3000
 # your url: http://USERNAME.github.io
 # if testing locally: http://localhost:3000
 

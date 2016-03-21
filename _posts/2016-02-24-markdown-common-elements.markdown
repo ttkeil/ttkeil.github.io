@@ -1,15 +1,17 @@
 ---
-title: "Markdown with noodles!"
+title: "Markdown Common Elements"
 layout: post
-date: 2015-11-24 14:40
-tag: markdown
+date: 2016-02-24 22:44
+tag:
+- markdown
+- elements
 blog: true
-#star: true
+star: true
 ---
 
 ## Summary:
 
-You can pick as item to sse how to apply in markdown.
+You can pick as item to see how to apply in markdown.
 
 ### Comum Elements
 - [Basic formatting](#basic-formatting)
@@ -21,23 +23,23 @@ You can pick as item to sse how to apply in markdown.
 - [Images](#images)
 - [Code](#code)
 
-### Especial Elements
-- [Evidence](#evidence)
-- [Star](#star)
-- [Gist](#gist)
-- [Codepen](#codepen)
-
 ---
 
 ## Basic formatting
 
 This note **demonstrates** some of what [Markdown][1] is *capable of doing*.
 
+And that's how to do it.
+
+{% highlight html %}
+This note **demonstrates** some of what [Markdown][some/link] is *capable of doing*.
+{% endhighlight %}
+
 ---
 
 ## Headings
 
-There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character.
+There are six levels of headings. They correspond with the six levels of HTML headings. You've probably noticed them already in the page. Each level down uses one more hash character. But we are using just 4 of them.
 
 # Headings can be small
 
@@ -102,8 +104,8 @@ There are six levels of headings. They correspond with the six levels of HTML he
 
 URLs can be made in a handful of ways:
 
-* A named link to [MarkItDown][3].
-* Another named link to [MarkItDown](http://markitdown.net/)
+* A named link to [Mark It Down][3].
+* Another named link to [Mark It Down](http://markitdown.net/)
 * Sometimes you just want a URL like <http://markitdown.net/>.
 
 {% highlight raw %}
@@ -129,11 +131,29 @@ It's sometimes handy for breaking things up.
 
 Markdown can also contain images. I'll need to add something here sometime.
 
+{% highlight raw %}
+![Markdowm Image][/image/url]
+{% endhighlight %}
+
 ![Markdowm Image][6]
 
+*Figure Caption*?
+
 {% highlight raw %}
-![Markdowm Image][http://kune.fr/wp-content/uploads/2013/10/ghost-blog.jpg]
+![Markdowm Image][/image/url]
+<figcaption class="caption">Photo by John Doe</figcaption>
 {% endhighlight %}
+
+![Markdowm Image][6]
+<figcaption class="caption">Photo by John Doe</figcaption>
+
+*Bigger Images*?
+
+{% highlight raw %}
+![Markdowm Image][/image/url]{: class="bigger-image" }
+{% endhighlight %}
+
+![Markdowm Image][6]{: class="bigger-image" }
 
 ---
 
@@ -187,54 +207,6 @@ $(window).scroll(function() {
 
 });
 {% endhighlight %}
-
----
-
-## Evidence
-
-You can try the evidence!
-
-<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
-
-{% highlight html %}
-<span class="evidence">Paragraphs can be written like so. A paragraph is the basic block of Markdown. A paragraph is what text will turn into when there is no reason it should become anything else.</span>
-{% endhighlight %}
-
----
-
-## Star
-
-You can star a post. Just add the tag to the markdown file.
-
-{% highlight raw %}
-star: true
-{% endhighlight %}
-
----
-
-## Gist
-
-You can add Gists from github.
-
-{% highlight raw %}
-{ % gist sergiokopplin/5afb058da029a13de73e % }
-{% endhighlight %}
-
-{% gist sergiokopplin/5afb058da029a13de73e %}
-
----
-
-## Codepen
-
-You can add Pens from Codepen.
-
-{% highlight html %}
-<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-{% endhighlight %}
-
-<p data-height="268" data-theme-id="0" data-slug-hash="gfdDu" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/gfdDu/'>Crappy Recreation of the Book Cover of *The Flame Alphabet*</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 [1]: http://daringfireball.net/projects/markdown/
 [2]: http://www.fileformat.info/info/unicode/char/2163/index.htm

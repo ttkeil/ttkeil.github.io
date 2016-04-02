@@ -1,12 +1,13 @@
-name: Phat Nguyen
-bio: 'A magician who turns coffee into codes'
-picture: 'assets/images/mybio.jpg'
-
-url: http://npvinhphat.github.io
-# url: http://localhost:3000
+# main text of home
+name: Tim Keil
+bio: ''
 
 # if it's an external image, update below for true
 external-image: false
+picture: 'assets/images/profile.jpg'
+
+url: http://www.timkeil.com
+# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
@@ -20,24 +21,27 @@ highlighter: rouge
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
+# if you don't want comments in your posts, set to false
+disqus: false
+
 # if you don't have any of social below, comment the line
-disqus: npvinhphatgithubio
-facebook: NPVPhat
-twitter: npvinhphat
+# facebook: myfacebook
+twitter: ttkeil
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-# github: npvinhphat
-# medium: medium
-email: npvinhphat@gmail.com
+github: ttkeil
+medium: ttkeil
+email: hello@timkeil.com
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
 width: normal
+# options: safe:true
 
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
